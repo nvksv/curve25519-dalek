@@ -37,7 +37,7 @@ features = [
 ]
 
 [dev-dependencies]
-sha2 = { version = "0.11.0-rc.0", default-features = false }
+sha2 = { version = "0.11.0-rc.0", default-features = false, path = "../../RustCrypto/hashes/sha2" }
 bincode = "1"
 criterion = { version = "0.5", features = ["html_reports"] }
 hex = "0.4.2"
@@ -59,7 +59,7 @@ group = { version = "=0.14.0-pre.0", default-features = false, optional = true }
 rand_core = { version = "0.9", default-features = false, optional = true }
 digest = { version = "0.11.0-rc.0", default-features = false, optional = true, features = [
     "block-api",
-] }
+], path = "../../RustCrypto/traits/digest" }
 subtle = { version = "2.6.0", default-features = false, features = [
     "const-generics",
 ] }
