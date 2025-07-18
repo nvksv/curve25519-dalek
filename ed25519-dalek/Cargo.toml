@@ -32,10 +32,10 @@ curve25519-dalek = { version = "=5.0.0-pre.0", path = "../curve25519-dalek", def
     "digest",
 ] }
 # ed25519 = { version = "=3.0.0-pre.0", default-features = false }
-ed25519 = { version = "=3.0.0-pre.0", default-features = false, path = "../../RustCrypto/signatures/ed25519" }
+ed25519 = { version = "=3.0.0-pre.0", default-features = false, path = "../../../RustCrypto/signatures/ed25519" }
 # signature = { version = "3.0.0-rc.2", optional = true, default-features = false }
-signature = { version = "3.0.0-rc.1", optional = true, default-features = false, path = "../../RustCrypto/traits/signature" }
-sha2 = { version = "0.11.0-rc.0", default-features = false, path = "../../RustCrypto/hashes/sha2" }
+signature = { version = "3.0.0-rc.1", optional = true, default-features = false, path = "../../../RustCrypto/traits/signature" }
+sha2 = { version = "0.11.0-rc.0", default-features = false, path = "../../../RustCrypto/hashes/sha2" }
 subtle = { version = "2.3.0", default-features = false }
 
 # optional features
